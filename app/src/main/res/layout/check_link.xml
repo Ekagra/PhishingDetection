@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:id="@+id/layout"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Check Phishing Links"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="50dp"
+        android:background="#ccd3d9"
+        android:hint="enter url here"
+        android:textSize="16sp"
+        android:id="@+id/url"
+        android:textAlignment="center"
+        >
+
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="80"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:layout_marginStart="5dp"
+        android:text="Go"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        >
+
+    </Button>
+
+</LinearLayout>
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@id/layout">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/web"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        >
+
+    </WebView>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progress">
+
+
+        </ProgressBar>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/text"
+            android:textColor="@color/colorAccent">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/check"
+            android:text="Check Status Of All Used Links"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            >
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

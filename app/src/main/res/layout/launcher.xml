@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:backgroundTintMode="src_over"
+   >
+    <!--    android:backgroundTint="#e8FFFFFF"
+        android:backgroundTintMode="src_over"-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+
+        <com.phishing.example.all.TypeWriter
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:fontFamily="@font/proxima_nova"
+            android:textColor="@color/black"
+            android:alpha="0.8"
+            android:id="@+id/launcher"
+            android:layout_centerInParent="true"
+            >
+
+        </com.phishing.example.all.TypeWriter>
+
+<!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#fafafa"
+                android:layout_centerInParent="true"
+                android:text="Phishing Detection">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Phishing Links"
+                android:id="@+id/titleone"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleone"
+                android:textSize="18sp"
+                android:textColor="#a8a8a8"
+                android:id="@+id/subtextone"
+                android:layout_alignStart="@id/titleone"
+                android:text="@string/link_des"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Phishing Emails"
+                android:id="@+id/titletwo"
+                android:layout_below="@id/subtextone"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titletwo"
+                android:textSize="18sp"
+                android:id="@+id/subtexttwo"
+                android:textColor="#a8a8a8"
+                android:layout_alignStart="@id/titleone"
+                android:text="@string/spam_des"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subtexttwo"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ham"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:id="@+id/ham_text"
+                    android:text="Ham">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#a8a8a8"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/ham_text"
+                    android:textStyle="bold"
+                    android:text="@string/ham"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ham"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spam"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:id="@+id/spam_text"
+                    android:text="Spam">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#a8a8a8"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/spam_text"
+                    android:textStyle="bold"
+                    android:text="@string/spam"
+                    >
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+-->
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:transitionName="image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:text="START"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

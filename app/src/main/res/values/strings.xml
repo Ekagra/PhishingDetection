@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PhishingDetection</string>
+    <string name="link_des">The phishing links are detected in these ways\n
+        <br>1. Check for auto login requests from host\n</br>
+        <br>2. Check for http response code 401 402\n</br>
+        <br>3. Check if host is flagged by google safe browsing\n</br>
+        <br>4. Check for SSL error if produced by the host\n</br>
+        <br>If anyone of the above is invoked a alert is displayed otherwise the website is displayed on the screen.</br>
+    </string>
+
+    <string name="spam_des">
+         We are using a natural language classifier trained on spam collection dataset provided by UCI Machine Learning to check if
+            the input text is spam or ham
+    </string>
+
+    <string name="ham">
+Ham is e-mail that is not Spam. In other words, "non-spam", or "good mail". It should be considered a shorter, snappier synonym for "non-spam".
+    </string>
+
+    <string name="spam">
+       Spam email is unsolicited and unwanted junk email sent out in bulk to an indiscriminate recipient list. Typically, spam is sent for commercial purposes.
+    </string>
+</resources>

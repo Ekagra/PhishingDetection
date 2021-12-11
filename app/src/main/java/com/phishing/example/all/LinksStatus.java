@@ -15,7 +15,6 @@ public class LinksStatus extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        getSupportActionBar().hide();
         viewPager = (ViewPager) findViewById(R.id.container);
 
         //setup the pages

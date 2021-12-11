@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/black"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="KayPhish"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/proxima_nova"
+        android:textColor="@color/white"
+        android:id="@+id/launcher"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

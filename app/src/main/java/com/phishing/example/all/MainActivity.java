@@ -1,36 +1,53 @@
 package com.phishing.example.all;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.gms.safetynet.SafetyNet;
+import com.google.android.gms.tasks.Tasks;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.Objects;
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager viewPager;
+    /*private ViewPager viewPager;*/
+    private Button b1,b2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        getSupportActionBar().hide();
-        viewPager = (ViewPager) findViewById(R.id.container);
+        setContentView(R.layout.option);
+        b1 = (Button) findViewById(R.id.links);
 
-        //setup the pages
-        SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Link()); //index 0
-        adapter.addFragment(new Message()); //index 0
+        SafetyNet.getClient(this).initSafeBrowsing();
 
-        viewPager.setAdapter(adapter);
 
-        TabLayout tablayout = (TabLayout) findViewById(R.id.tab);
-        tablayout.setupWithViewPager(viewPager);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Link.class);
+                startActivity(intent);
+            }
+        });
 
-        tablayout.getTabAt(0).setText("Links");
-        tablayout.getTabAt(1).setText("Spam");
 
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SafetyNet.getClient(this).initSafeBrowsing();
     }
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:paddingHorizontal="50dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="15dp"
+            android:elevation="15dp"
+            android:layout_alignParentBottom="true"
+            >
+
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:text="Link Scanner"
+        android:textSize="20sp"
+            android:id="@+id/links"
+        android:background="@color/grey"
+        >
+
+    </Button>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="50dp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="15dp"
+            android:elevation="15dp"
+            android:layout_alignParentTop="true"
+            >
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Email Spam Scanner"-->
+<!--            android:id="@+id/spam"-->
+<!--            android:background="@color/grey"-->
+<!--            >-->
+
+<!--        </Button>-->
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

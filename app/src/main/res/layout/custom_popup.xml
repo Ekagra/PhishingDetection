@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#eee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/alert"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="ALERT"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link Scan Result"
+            android:id="@+id/results"
+            android:layout_below="@id/alert"
+            android:textSize="18sp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="#ff000000"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO"
+        android:id="@+id/proxy"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/results"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO"
+        android:id="@+id/ans"
+        android:layout_below="@id/proxy"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="OK"
+            android:id="@+id/btn_dialog"
+            android:background="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff" />
+
+            //temp viewgroup to create margin
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                >
+
+            </View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Proceed Anyway"
+            android:id="@+id/procced"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorAccent"
+            android:paddingHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,4 +1,5 @@
 <resources>
+    <string name="safety_net_api_key">AIzaSyBMbtjRkgHfS863BNepzUStsnR5UTclGrY</string>
     <string name="app_name">PhishingDetection</string>
     <string name="link_des">The phishing links are detected in these ways\n
         <br>1. Check for auto login requests from host\n</br>
